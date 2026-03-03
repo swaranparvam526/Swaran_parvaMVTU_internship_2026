@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Events in J5</h1>
+<p>1. Mouse Events</p>
+<p>2. Keyboard Events</p>
+<p>3. Form events</p>
+<button id="click1" onclick="handleClick()">Click1</button>
+<button id="click2">click2</button>
+   <script>
+    const handleClick = () => {
+    console.log("Clicked the Button");
+    }
+    const click2 = document.getElementById("click2");
+    click2.addEventListener("dblclick", () =>{
+    handleClick();  
+});
+   </script>
+</body>
+</html>
